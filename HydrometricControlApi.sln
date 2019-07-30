@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrometricControlApi", "HydrometricControlApi\HydrometricControlApi.csproj", "{9680BE67-2B0B-4303-A745-37AC60709BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrometricControl.Domain", "HydrometricControl.Domain\HydrometricControl.Domain.csproj", "{971981D5-D67B-42DC-808B-096FC1C0A148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrometricControl.Data", "HydrometricControl.Data\HydrometricControl.Data.csproj", "{5F753FC8-61EC-40A1-9074-EB5E19D9B810}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00Api", "00Api", "{7B2CFF2D-6894-489E-987F-313D81C2D021}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01Domain", "01Domain", "{DAA0A50D-C8ED-4D39-AD03-7C5EBA5E4B0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02Data", "02Data", "{31ECE25F-9469-4852-BABF-3329E547A179}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +25,22 @@ Global
 		{9680BE67-2B0B-4303-A745-37AC60709BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9680BE67-2B0B-4303-A745-37AC60709BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9680BE67-2B0B-4303-A745-37AC60709BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971981D5-D67B-42DC-808B-096FC1C0A148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971981D5-D67B-42DC-808B-096FC1C0A148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971981D5-D67B-42DC-808B-096FC1C0A148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971981D5-D67B-42DC-808B-096FC1C0A148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F753FC8-61EC-40A1-9074-EB5E19D9B810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F753FC8-61EC-40A1-9074-EB5E19D9B810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F753FC8-61EC-40A1-9074-EB5E19D9B810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F753FC8-61EC-40A1-9074-EB5E19D9B810}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9680BE67-2B0B-4303-A745-37AC60709BB2} = {7B2CFF2D-6894-489E-987F-313D81C2D021}
+		{971981D5-D67B-42DC-808B-096FC1C0A148} = {DAA0A50D-C8ED-4D39-AD03-7C5EBA5E4B0C}
+		{5F753FC8-61EC-40A1-9074-EB5E19D9B810} = {31ECE25F-9469-4852-BABF-3329E547A179}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FC8AC72-AA16-48F8-8D6B-DEE2ADCB8259}
