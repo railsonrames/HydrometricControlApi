@@ -14,11 +14,11 @@ namespace HydrometricControlApi
     public class Startup
     {
         public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+            => Configuration = configuration;
 
         public IConfiguration Configuration { get; }
+        readonly string AllowedSpecificOrigins = "_AllowedSpecificOrigins";
+        readonly string[] SpecifcUrlOriginsList = { "http://localhost:5000" };
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -60,6 +60,7 @@ namespace HydrometricControlApi
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseCors(AllowedSpecificOrigins);
 
             app.UseMvc(routes =>
             {
